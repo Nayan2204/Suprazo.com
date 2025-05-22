@@ -1,0 +1,432 @@
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 500%;
+    width: 100%;
+    background-color: rgb(2, 6, 5);
+}
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(circle at top center, #10121f, #000000);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(16, 18, 31, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Navbar inner container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Button */
+.btn {
+  background: linear-gradient(135deg, #3a63f3, #5a7dfc);
+  padding: 0.6rem 1.3rem;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #5a7dfc, #3a63f3);
+}
+.d1{
+    height: 400px;
+    width: 100%;
+}
+img{
+    height: 400px;
+    width: 100%;
+    rotate: 180deg;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  background: transparent; /* optional dark overlay */
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 35px;
+}
+
+#About_page{
+  border: 5px solid rgb(251, 249, 249);
+  justify-content: center;
+  align-items: center;
+  
+ 
+
+}
+#About-us-Heading{
+  height: 50px;
+  border: 2px solid white;
+  justify-content:center ;
+  display: flex;
+  font-size: 20px;
+
+}
+
+#About-us-Button{
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid white;
+   flex-direction: row;
+  gap: 20px; 
+  
+  
+}
+.buttons-icon{
+  height: 40px;
+  width: 110px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #3a63f3;
+  
+}
+
+.About-us-container{
+  height: 470px;
+  border: 2px solid white;
+  justify-content:center ;
+  display: flex;
+  border: 2px solid hotpink;
+  align-items: center;
+  display: flex;
+   flex-direction: row;
+  gap: 20px; 
+
+}
+#Introduction-container{
+  height: 300px;
+  width: 300px;
+  border: 3px solid blue;
+   justify-content:center ;
+  display: flex;
+  
+}
+#skill-container{
+  height: 300px;
+  width: 300px;
+  border: 3px solid blue;
+   justify-content:center ;
+  display: flex;
+}
+#contact-container{
+  height: 300px;
+  width: 300px;
+  border: 3px solid blue;
+  margin-right: 20px;
+   justify-content:center ;
+  display: flex;
+}
+
+.Reson-to-choose-heading{
+  height: 50px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card-container{
+   height: 500px;
+  border: 2px solid white;
+  justify-content:center ;
+  display: flex;
+  border: 2px solid hotpink;
+  align-items: center;
+  display: flex;
+   flex-direction: row;
+  gap: 50px; 
+
+
+}
+
+.card {
+
+width: 250px;
+height: 280px;
+background: #07182E;
+position: relative;
+display: flex;
+place-content: center;
+place-items: center;
+overflow: hidden;
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+ transition: transform 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow:hidden;
+}
+
+
+
+.card:hover {
+  transform: scale(1.20); /* Zoom in */
+  z-index: 1; /* Optional: brings the hovered card above others */
+  transform:  rotate(90deg);
+  animation: rotBGimg 15000s li infinite;
+transition: all 0.25 linear;
+}
+
+
+
+.card h4 {
+z-index: 1;
+color: white;
+font-size: 20px;
+justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 170px;
+
+}
+
+.card::before {
+content: '';
+position: absolute;
+width: 150px;
+background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+height: 130%;
+animation: rotBGimg 15000s linear infinite;
+transition: all 0.25 linear;
+}
+
+@keyframes rotBGimg {
+from{
+transform: rotate(35deg);
+}
+to {
+transform: rotate(70deg);
+}
+}
+.card::after {
+content: " ";
+position: absolute;
+background: #07182e;
+inset: 5px;
+border-radius: 15px;
+
+}
+
+.over-all-container{
+  height: 550px;
+  border: 2px solid green;
+  display: flex;
+}
+
+.over-all-container1{
+  height: 550px;
+  width: 600px;
+  border: 2px solid rgb(176, 89, 31);
+}
+
+.over-all-container2{
+  height: 550px;
+  width: 1000px;
+  border: 2px solid rgb(113, 27, 184);
+
+}
+.overall-upper{
+  height: 270px;
+  border: 2px solid rgb(131, 11, 183);
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px; 
+  display: flex;
+
+}
+.overall-lower{
+  height: 270px;
+  border: 2px solid rgb(171, 5, 44);
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px; 
+  display: flex;
+}
+
+.overll-upper-card{
+  width: 220px;
+height: 230px;
+background: #ced2d7;
+position: relative;
+display: flex;
+place-content: center;
+place-items: center;
+overflow: hidden;
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+ transition: transform 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow:hidden;
+ margin-top: 18px;
+}
+
+.overll-upper-card:hover {
+  transform: scale(1.20); /* Zoom in */
+  z-index: 1; /* Optional: brings the hovered card above others */
+  transform:  rotate(90deg);
+  animation: rotBGimg 15000s linear infinite;
+
+}
+
+.overll-upper-card h3 {
+z-index: 1;
+color: white;
+font-size: 20px;
+justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 170px;
+
+}
+
+.overll-lower-card{
+  width: 220px;
+height: 230px;
+background: #ced2d7;
+position: relative;
+display: flex;
+place-content: center;
+place-items: center;
+overflow: hidden;
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+ transition: transform 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow:hidden;
+ margin-top: 18px;
+}
+
+.overll-lower-card:hover {
+  transform: scale(1.01); /* Zoom in */
+  z-index: 1; /* Optional: brings the hovered card above others */
+  transform:  rotate(10deg);
+  animation: rotBGimg 15000s linear infinite;
+
+}
+
+.overll-lower-card h3 {
+z-index: 1;
+color: white;
+font-size: 20px;
+justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 170px;
+
+}
+
+@media (max-width: 600px) {
+  title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .navbar{
+    width: 600px;
+  }
+  .container{
+    width: 600px;
+    
+  }
+  .d1 {
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .text-overlay{
+     width: 600px;
+    justify-content: center;
+    margin-left:90px;
+    display: flex;
+  }
+  #About_page{
+    width: 600px;
+    margin-left: 10px;
+  }
+  #Introduction-container{
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+  }
+  #skill-container{
+    width: 300px;
+   
+  }
+  #contact-container{
+    width: 300px;
+    
+  }
+
+
+  
+}
