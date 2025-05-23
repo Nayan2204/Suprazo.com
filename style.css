@@ -103,6 +103,10 @@ img{
   border-radius: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 35px;
+  
+}
+h4{
+  font-size: 15px;
 }
 
 #About_page{
@@ -165,6 +169,7 @@ img{
   display: flex;
   
 }
+
 #skill-container{
   height: 300px;
   width: 300px;
@@ -181,12 +186,18 @@ img{
   display: flex;
 }
 
-.Reson-to-choose-heading{
+.Services-Heading{
   height: 50px;
   font-size: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+h1{
+   justify-content: center;
+  align-items: center;
+  display: flex;
+
 }
 
 .card-container{
@@ -227,9 +238,10 @@ align-items: center;
 .card:hover {
   transform: scale(1.20); /* Zoom in */
   z-index: 1; /* Optional: brings the hovered card above others */
-  transform:  rotate(90deg);
-  animation: rotBGimg 15000s li infinite;
-transition: all 0.25 linear;
+  transform:  rotate(30deg);
+  animation: rotBGimg 15000s linear infinite;
+  transition: all 0.25 linear;
+  animation: rotBGimg reverse;
 }
 
 
@@ -237,12 +249,12 @@ transition: all 0.25 linear;
 .card h4 {
 z-index: 1;
 color: white;
-font-size: 20px;
+font-size: 15px;
 justify-content: center;
   align-items: center;
   display: flex;
-  margin-bottom: 170px;
-
+  margin-bottom: 190px;
+  padding: 20px;
 }
 
 .card::before {
@@ -271,6 +283,36 @@ inset: 5px;
 border-radius: 15px;
 
 }
+
+.After-service-container{
+  height:550px ;
+  border: 2px solid greenyellow;
+}
+.After-service-title{
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+.After-service-details{
+
+  height: 480px;
+  border: 2px solid rgb(27, 27, 138);
+  display: flex;
+}
+.Image-container-left{
+  height: 450px;
+  width: 550px;
+  border: 2px solid rgb(192, 106, 167);
+}
+.detail-container-right{
+   height: 450px;
+    width: 750px;
+  border: 2px solid rgb(188, 29, 29);
+}
+
+
 
 .over-all-container{
   height: 550px;
@@ -384,46 +426,149 @@ justify-content: center;
 
 }
 
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #101010;
+  gap: 40px;
+}
+
+.contact-box {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.contact-box h2 {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.contact-box h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #2e2e2e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.contact-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #ffffff;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-info {
+  max-width: 500px;
+  color: #ccc;
+}
+
+.info-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+.hire-section {
+  background: #141414;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hire-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+
+
 @media (max-width: 600px) {
   title{
     justify-content: center;
     align-items: center;
     display: flex;
   }
+  .logo{
+
+    font-size: 16px;
+    
+  }
+  .nav-links{
+    font-size: 24px;
+    padding: 0.3rem 0.5rem;
+  }
   .navbar{
-    width: 600px;
+    width: 375px;
+    
   }
   .container{
-    width: 600px;
+    width: 200px;
     
   }
   .d1 {
-    width: 600px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     display: flex;
   }
   .text-overlay{
-     width: 600px;
+     width: 200px;
     justify-content: center;
-    margin-left:90px;
+    margin-left:10px;
     display: flex;
   }
   #About_page{
-    width: 600px;
+    width: 200px;
     margin-left: 10px;
   }
+  .About-us-container{
+    grid-template-columns: repeat(2,1fr);
+  }
   #Introduction-container{
-    width: 300px;
+    width: 100px;
     height: 300px;
-    margin-left: 20px;
   }
   #skill-container{
-    width: 300px;
+    width: 100px;
    
   }
   #contact-container{
-    width: 300px;
+    width: 100px;
     
   }
 
