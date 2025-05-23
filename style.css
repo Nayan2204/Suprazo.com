@@ -575,3 +575,158 @@ justify-content: center;
 
   
 }
+
+
+/* Responsive codes for all device  */
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+  .container,
+  .About-us-container,
+  .card-container,
+  .overall-upper,
+  .overall-lower,
+  .After-service-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Image-container-left,
+  .detail-container-right,
+  .over-all-container1,
+  .over-all-container2 {
+    width: 90%;
+  }
+
+  .card,
+  .overll-upper-card,
+  .overll-lower-card {
+    width: 90%;
+    height: auto;
+  }
+
+  #Introduction-container,
+  #skill-container,
+  #contact-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .Services-Heading,
+  .After-service-title,
+  h1,
+  h4 {
+    text-align: center;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .hamburger div {
+    background-color: white;
+    height: 3px;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(16, 18, 31, 0.95);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Sections */
+  .d1,
+  .text-overlay,
+  #About_page,
+  .About-us-container,
+  .card-container,
+  .After-service-details,
+  .over-all-container,
+  .overall-upper,
+  .overall-lower,
+  .contact-section,
+  .hire-section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .text-overlay {
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .card,
+  .overll-upper-card,
+  .overll-lower-card {
+    width: 90%;
+    height: auto;
+  }
+
+  #Introduction-container,
+  #skill-container,
+  #contact-container,
+  .Image-container-left,
+  .detail-container-right,
+  .contact-box,
+  .contact-info {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hire-section h2 {
+    font-size: 28px;
+  }
+}
