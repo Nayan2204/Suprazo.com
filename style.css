@@ -242,6 +242,8 @@ align-items: center;
   animation: rotBGimg 15000s linear infinite;
   transition: all 0.25 linear;
   animation: rotBGimg reverse;
+  
+  
 }
 
 
@@ -253,13 +255,14 @@ font-size: 15px;
 justify-content: center;
   align-items: center;
   display: flex;
+  position: relative;
   margin-bottom: 190px;
   padding: 20px;
 }
 
 .card::before {
 content: '';
-position: absolute;
+position:absolute;
 width: 150px;
 background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
 height: 130%;
@@ -272,12 +275,13 @@ from{
 transform: rotate(35deg);
 }
 to {
-transform: rotate(70deg);
+transform: rotate(0deg);
 }
 }
+
 .card::after {
 content: " ";
-position: absolute;
+position:absolute;
 background: #07182e;
 inset: 5px;
 border-radius: 15px;
@@ -309,30 +313,42 @@ border-radius: 15px;
 .detail-container-right{
    height: 450px;
     width: 750px;
+    text-align: justify;
+    padding: 20px;
   /* border: 2px solid rgb(188, 29, 29); */
 }
 
 
+/* product-page */
 
-.over-all-container{
+.product-title{
+  height: 40px;
+  /* border: 2px solid greenyellow; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.product-container{
   height: 550px;
   /* border: 2px solid green; */
   display: flex;
 }
 
-.over-all-container1{
+.product-container1{
   height: 550px;
   width: 600px;
   /* border: 2px solid rgb(176, 89, 31); */
 }
 
-.over-all-container2{
+.product-container2{
   height: 550px;
   width: 1000px;
   /* border: 2px solid rgb(113, 27, 184); */
 
 }
-.overall-upper{
+.product-upper{
   height: 270px;
   /* border: 2px solid rgb(131, 11, 183); */
   justify-content: center;
@@ -341,7 +357,7 @@ border-radius: 15px;
   display: flex;
 
 }
-.overall-lower{
+.product-lower{
   height: 270px;
   /* border: 2px solid rgb(171, 5, 44); */
   flex-direction: row;
@@ -350,7 +366,7 @@ border-radius: 15px;
   display: flex;
 }
 
-.overll-upper-card{
+.product-upper-card{
   width: 220px;
 height: 230px;
 background: #ced2d7;
@@ -369,7 +385,7 @@ align-items: center;
  margin-top: 18px;
 }
 
-.overll-upper-card:hover {
+.product-upper-card:hover {
   transform: scale(1.20); /* Zoom in */
   z-index: 1; /* Optional: brings the hovered card above others */
   transform:  rotate(90deg);
@@ -377,7 +393,7 @@ align-items: center;
 
 }
 
-.overll-upper-card h3 {
+.product-upper-card h3 {
 z-index: 1;
 color: white;
 font-size: 20px;
@@ -388,7 +404,7 @@ justify-content: center;
 
 }
 
-.overll-lower-card{
+.product-lower-card{
   width: 220px;
 height: 230px;
 background: #ced2d7;
@@ -407,7 +423,7 @@ align-items: center;
  margin-top: 18px;
 }
 
-.overll-lower-card:hover {
+.product-lower-card:hover {
   transform: scale(1.01); /* Zoom in */
   z-index: 1; /* Optional: brings the hovered card above others */
   transform:  rotate(10deg);
@@ -415,7 +431,7 @@ align-items: center;
 
 }
 
-.overll-lower-card h3 {
+.product-lower-card h3 {
 z-index: 1;
 color: white;
 font-size: 20px;
